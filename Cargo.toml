@@ -3,7 +3,12 @@ name = "toolshed"
 version = "0.1.0"
 authors = ["takayuki <watermint@users.noreply.github.com>"]
 edition = "2018"
+license = "MIT"
+repository = "https://github.com/watermint/toolshed"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+futures = "0.3.12"
+serde_json = "1.0"
